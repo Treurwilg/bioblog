@@ -1,0 +1,10 @@
+<?php
+	session_start();
+	// connect to database
+	$conn = mysqli_connect("ict4us.ssh.transip.me", "ict4us_bio", "Usv2qztpjuaS3tcANGkST", "ict4us_blogs");
+	if (!$conn ) {die("Error connecting to database: " . mysqli_connect_error());}
+	
+	// define global constants
+	define('ROOT_PATH', realpath(dirname(__FILE__)));
+	define('BASE_URL', 'https://ict4us.nl/complete-blog-php/');
+?>
