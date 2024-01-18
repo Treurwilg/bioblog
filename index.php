@@ -2,9 +2,9 @@
 <?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
 <?php require_once( ROOT_PATH . '/includes/head_section.php') ?>
 	<title>LifeBlog | Home </title>
-</head>
+</head> 
 <body>
-	<!-- container - wraps whole page -->
+	<!-- container - that wraps whole page -->
 	<div class="container">
 		<!-- navbar -->
 		<?php include( ROOT_PATH . '/includes/navbar.php') ?>

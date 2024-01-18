@@ -12,6 +12,17 @@ function getPublishedPosts() {
 	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	return $posts;
 }
-
-// more functions to come here ...
+?******************************
+* Receives a post id and
+* Returns topic of the post
+*******************************/
+function getPostTopic($post_id){
+	global $conn;
+	$sql = "SELECT * FROM topics WHERE id=
+				(SELECT topic_id FROM post_topic WHERE post_id=$post_id)                                                   
+							LIMIT 1";
+	$result = mysqli_query($conn, $sql);
+	$topic = mysqll_fetch_assoc($result);
+	return $topic;
+}
 ?>
