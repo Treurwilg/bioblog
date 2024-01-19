@@ -1,13 +1,6 @@
-Dit is een nieuw project. Dedicated to my biodiversity blog, software and content.
+Dit is een nieuw project begonnen in januari 2024. Dedicated to my biodiversity
+ blog, software and content. Het kader is de werkgroep Biodiversiteit van de 
+gemeente West Maas en Waal, de partij Sociaal Maas en Waal, de praktijkgroep 
+landeigenaren van de Stichting Landschapsbeheer Gelderland (SLG) en het 
+lidmaatschap van het IVN.
 
-Vandaag naar GitHub
-
-Ik moest weer de passpharase aan de agent toevoegen om te kunnen pushen.
-Is dat normaal? Nu gepushed met -u en -f, dus ik zou moeten kunnen
-volstaan met git push.
-Remote name aangepast in git van bio naar bioblog.
-<<<<<<< HEAD
-Gekloond naar Hazelaar
-=======
-Probleem met push op hazelaar. Vraagt om wachtwoord
->>>>>>> a95a3cc92cddb4bf1aa6476403ba3b5e42e46af1
