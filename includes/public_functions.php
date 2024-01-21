@@ -47,7 +47,7 @@ function getPublishedPostsByTopic($topic_id) {
 	
 	$final_posts = array();
 	foreach ($posts as $post) {
-		$post['topic'] = getPostTopic($post[id]);
+		$post['topic'] = getPostTopic($post['id']);
 		array_push($final_posts, $post);	
 	}
 	return $final_posts;							
@@ -57,7 +57,7 @@ function getPublishedPostsByTopic($topic_id) {
 ********************************/
 function getTopicNameById($id) {
 	global $conn;
-	$sql = "SELECT name FROM topics WHERE id = $id;
+	$sql = "SELECT name FROM topics WHERE id = $id";
 	$result = mysqli_query($conn, $sql);
 	$topic = mysqli_fetch_assoc($result);
 	return $topic['name'];
