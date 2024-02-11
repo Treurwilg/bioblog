@@ -1,10 +1,10 @@
-<?php include('config.php'); ?>
-<?php include('includes/public_functions.php'); ?>
-<?php include('includes/head_section.php'); ?>
+<?php include('config.php'); ?> // new
+<?php include( ROOT_PATH . 'includes/public_functions.php'); ?>
+<?php include( ROOT_PATH . 'includes/head_section.php'); ?>
 <?php 
 		// Get posts under a particular topic
 		if (isset($_GET['topic'])) {
-			$topic_id = &_GET['topic'];
+			$topic_id = $_GET['topic'];
 			$posts = getPublishedPostsByTopic($topic_id);		
 		}
 ?>
@@ -24,9 +24,9 @@
 	<?php foreach ($posts as $post): ?>
 		<div class="post" style="margin-left: 0px;">
 			<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
-			<a href="single_post.php?post-slug=<?php echo $post[slug]; ?>">
+			<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
 				<div class="post_info">
-					<h3><?php echo $post['title'] ?></h3>
+					<h3><?php echo $post['title']; ?></h3>
 					<div class="info">
 						<span><?php echo date("F j, Y " , strtotime($post["created_at"])); ?></span>
 						<span class="read_more">Read more</span>
@@ -34,7 +34,7 @@
 				</div>
 			</a>
 		</div>
-	<?php endforeach ?>
+	<?php endforeach; ?>
 </div>
 <!-- // content -->
 </div>
@@ -42,4 +42,3 @@
 <!-- Footer -->
 <?php include( ROOT_PATH . '/includes/footer.php'); ?>
 <!-- // Footer -->
-</body>

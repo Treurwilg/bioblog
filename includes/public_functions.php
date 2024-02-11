@@ -1,4 +1,4 @@
-<?php
+<?php /new
 /*****************************
 * Returns all published posts
 ******************************/
@@ -57,21 +57,39 @@ function getPublishedPostsByTopic($topic_id) {
 ********************************/
 function getTopicNameById($id) {
 	global $conn;
-	$sql = "SELECT name FROM topics WHERE id = $id";
+	$sql = "SELECT name FROM topics WHERE id=$id";
 	$result = mysqli_query($conn, $sql);
 	$topic = mysqli_fetch_assoc($result);
 	return $topic['name'];
 }
-
-
-
-
-
-
-
+/*******************************
+* Returns a single post
+**********************8*********/
+function getPost($slug) {
+	global $conn;
+	// Get single post slug
+	$post_slug = $_GET['post-slug'];
+	$sql = "SELECT * FROM posts WHERE slug = '$post_slug' AND published=true";
+	$result = mysqli_query($conn, $sql);
+	//fetch query result as associative array.
+	$post = mysqli_fetch_assoc($result);
+	if($post) {
+		// get the topic to which this post belongs
+		$post['topic'] = getPostTopic($post['id']);
+	}
+	return $post;
+}
+/**********************
+*Return all topics
+***********************/
+function getAllTopics() {
+	global $conn;
+	$sql = "SELECT * FROM topics";
+	$result = mysqli_query($conn, $sql);
+	$topics = mysql_fetch_all($result, MYSQLI_ASSOC);
+	return $topics;
+}
 ?>
-
-
 
 
 

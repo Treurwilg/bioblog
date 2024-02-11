@@ -1,4 +1,4 @@
-<div class="banner">
+<div class="banner"> //new
 	<div class="welcome_msg">
 		<h1>Today's Inspiration</h1>
 		<p>

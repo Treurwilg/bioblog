@@ -1,4 +1,4 @@
-<?php
+<?php // new
 	session_start();
 	// connect to database
 	$conn = mysqli_connect("ict4us-blogs.db.transip.me", "ict4us_bio", "7q9uVtg6aRaxFBAj3tiPyxBzDGT95qPG8rBe", "ict4us_blogs");
