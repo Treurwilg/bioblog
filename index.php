@@ -1,53 +1,46 @@
-<?php require_once('config.php') ?> //new
-<?php require_once( ROOT_PATH . '/includes/public_functions.php') ?>
-<?php require_once( ROOT_PATH . '/includes/head_section.php') ?>
-	<title>LifeBlog | Home </title>
-</head> 
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Noto+Serif|Tangerine" rel="stylesheet">
+        <!-- Styling for public area -->
+        <link rel="stylesheet" href="static/css/public_styling.css">
+        <meta charset="UTF-8">
+        <title>LifeBlog | Home </title>
+</head>
 <body>
-	<!-- How check code fitness for PHP8.2 -->
-	<!-- container - that wraps whole page -->
-	<div class="container">
-		<!-- navbar -->
-		<?php include( ROOT_PATH . '/includes/navbar.php') ?>
-		<!-- // navbar -->
-		
-		<!-- banner -->
-		<?php include( ROOT_PATH . '/includes/banner.php') ?>
-		<!-- // banner -->
-		
-		<!-- Retrieve all posts from database -->
-		<?php $posts = getPublishedPosts(); ?>
-		
-		<!-- Page content -->/.
-		<div class="content">
-			<h2 class="content-title">Recent Articles</h2>
-			<hr> 
-			<!-- more content still to come here, -->
-			<?php foreach ($posts as $post): ?>
-				<div class="post" style="margin-left: 0px;">
-					<img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="">
-					<?php if (isset($post['topic']['name'])): ?>
-						<a 
-							href="<?php echo BASE_URL . 'filtered_posts.php?topic=' . $post['topic']['id']; ?>"
-							class="btn category">
-							<?php echo $post['topic']['name']; ?>									
-						</a>
-					<?php endif; ?>
-					<a href="single_post.php?post-slug=<?php echo $post['slug']; ?>">
-						<div class="post_info">
-							<h3><?php echo $post['title']; ?></h3>
-							<div class="info">
-								<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-								<span class="read_more">Read more...</span>							
-							</div>					
-						</div>			
-					</a>
-				</div>
-			<?php endforeach; ?>
-		<!-- // Page content -->
+        <!-- container - wraps whole page -->
+        <div class="container">
+                <!-- navbar -->
+                <div class="navbar">
+                        <div class="logo_div">
+                                <a href="index.php"><h1>LifeBlog</h1></a>
+                        </div>
+                        <ul>
+                          <li><a class="active" href="index.php">Home</a></li>
+                          <li><a href="#news">News</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                          <li><a href="#about">About</a></li>
+                        </ul>
+                </div>
+                <!-- // navbar -->
 
-		
-		<!-- footer -->
-		<?php require_once( ROOT_PATH . '/includes/footer.php'); ?>
-		<!-- // footer -->
+                <!-- Page content -->
+                <div class="content">
+                        <h2 class="content-title">Recent Articles</h2>
+                        <hr>
+                        <!-- more content still to come here ... -->
+                </div>
+                <!-- // Page content -->
+
+                <!-- footer -->
+                <div class="footer">
+                        <p>MyViewers &copy; <?php echo date('Y'); ?></p>
+                </div>
+                <!-- // footer -->
+
+        </div>
+        <!-- // container -->
+</body>
+</html>
 	
