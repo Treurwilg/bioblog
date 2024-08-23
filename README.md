@@ -1,4 +1,4 @@
-![logo](https://aardwesp.stack.storage/s/LGtGyo1sIjs22n6T)
+![logo](https://aardwesp.stack.storage/s/lGKC6eHjlyKdXNXe)
 
 # BIOBLOG
 
