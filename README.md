@@ -1,4 +1,4 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![logo](https://aardwesp.stack.storage/s/LGtGyo1sIjs22n6T)
 
 # BIOBLOG
 
