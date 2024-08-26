@@ -1,15 +1,16 @@
-<?php require_once('includes/head_section.php') ?>
+<?php require_once('config.php') ?>
+<?php require_once( ROOT_PATH . '/includes/head_section.php') ?>
         <title>BioBlog | Home </title>
 </head>
 <body>
         <!-- container - wraps whole page -->
         <div class="container">
                 <!-- navbar -->
-                <?php include('includes/navbar.php') ?>
+                <?php include( ROOT_PATH . '/includes/navbar.php') ?>
                 <!-- // navbar -->
                 
                 <!-- banner -->
-                <?php include('includes/banner.php') ?>
+                <?php include( ROOT_PATH . '/includes/banner.php') ?>
                 <!-- // banner -->
 
                 <!-- Page content -->
@@ -21,5 +22,5 @@
                 <!-- // Page content -->
 
                 <!-- footer -->
-					<?php include('includes/footer.php') ?>
+					<?php include( ROOT_PATH . '/includes/footer.php') ?>
 	
