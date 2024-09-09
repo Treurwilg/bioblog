@@ -1,5 +1,5 @@
 		<div class="footer">
-			<p>MyViewers &copy; <?php echo date('Y'); ?></p>
+			<p>Praktijknetwerk biodiversiteit West Maas en Waal &copy; <?php echo date('Y'); ?></p>
  		</div>
 		<!-- // footer -->
 	</div>

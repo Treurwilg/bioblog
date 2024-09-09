@@ -134,8 +134,9 @@ form input:focus {
 	border:1px solid #374447;
 	box-shadow: 3px 2px 2px;
 	position: absolute;
-	left: 5px; top: 5px;
-	z-index: ;
+	left: 5px; 
+	top: 5px;
+	z-index: 3;
 }
 .content .post .category:hover {
 	box-shadow: 3px 2px 2px;
@@ -168,7 +169,8 @@ form input:focus {
 }
 .content .post .post_info span.read_more {
 	position: absolute;
-	right: 5px; bottom: 5px;
+	right: 5px; 
+	bottom: 5px;
 }
 /* FOOTER */
 .footer {

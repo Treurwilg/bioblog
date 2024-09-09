@@ -1,4 +1,4 @@
-<?php /new
+<?php
 /*****************************
 * Returns all published posts
 ******************************/
@@ -16,17 +16,16 @@ function getPublishedPosts() {
 		$post['topic'] = getPostTopic($post['id']);
 		array_push($final_posts, $post);
 	}
-	return $final_posts;
+	return $posts;
 }
 /******************************
 * Receives a post id and
-* Returns topic of the post
+* returns topic of the post
 *******************************/
 function getPostTopic($post_id){
 	global $conn;
 	$sql = "SELECT * FROM topics WHERE id=
-				(SELECT topic_id FROM post_topic WHERE post_id=$post_id)                                                   
-							LIMIT 1";
+			(SELECT topic_id FROM post_topic WHERE post_id=$post_id) LIMIT 1";
 	$result = mysqli_query($conn, $sql);
 	$topic = mysqli_fetch_assoc($result);
 	return $topic;
@@ -69,7 +68,7 @@ function getPost($slug) {
 	global $conn;
 	// Get single post slug
 	$post_slug = $_GET['post-slug'];
-	$sql = "SELECT * FROM posts WHERE slug = '$post_slug' AND published=true";
+	$sql = "SELECT * FROM posts WHERE slug=$post_slug AND published=true";
 	$result = mysqli_query($conn, $sql);
 	//fetch query result as associative array.
 	$post = mysqli_fetch_assoc($result);
