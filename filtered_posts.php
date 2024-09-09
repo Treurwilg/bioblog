@@ -1,4 +1,4 @@
-<?php include('config.php'); ?> // new
+<?php include('config.php'); ?>
 <?php include( ROOT_PATH . 'includes/public_functions.php'); ?>
 <?php include( ROOT_PATH . 'includes/head_section.php'); ?>
 <?php 
@@ -8,7 +8,7 @@
 			$posts = getPublishedPostsByTopic($topic_id);		
 		}
 ?>
-<title>LifeBlog | Home</title>
+<title>BioBlog | Home</title>
 </head>
 <body>
 <div class="container">
