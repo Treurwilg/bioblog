@@ -46,7 +46,8 @@ but anyone with ideas on the subject is welcome.
 * A guide for me is:
 [codewithawa](https://codewithawa.com/posts/how-to-create-a-blog-in-php-and-mysql-database)
 * As guide for readme: [readme-best-practices](https://github.com/jehna/readme-best-practices/blob/master/README.md)
-* I show the result on [mySite](https://ict4us.nl) which also is the project homepage.
+* I show the result on [mySite](https://ict4us.nl/bioblog) which also is the project homepage.
 
 ## Licensing
-"The code in this project is licensed under Creative Commons Zero v1.0 Universal."
+["The code in this project is licensed under Creative Commons Zero v1.0 Universal."]
+(https://github.com/Treurwilg/bioblog?tab=CC0-1.0-1-ov-file#readme)
