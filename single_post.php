@@ -7,7 +7,7 @@
 	$topics = getAllTopics();
 ?>
 <?php include('includes/head_section.php'); ?>
-<title><?php echo $post['title'] ?> | BioBlog</title>
+<title><?php echo $post['title']; ?> | BioBlog</title>
 </head>
 <body>
 <div class="container">
@@ -28,7 +28,7 @@
 				</div>
 			<?php endif; ?>
 			</div>
-			<!-- full post div -->
+			<!-- // full post div -->
 			
 			<!-- comments section -->
 			<!-- coming soon ... -->
